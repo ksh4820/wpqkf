@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/notice2.css' %}">
+    <title>Document</title>
+    <style>
+        footer {
+            padding-bottom: 10vh;
+            padding-top: 30vh;
+        }
+
+        .footer {
+            width: 100%;
+            height: 120px;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .item {
+            margin: 10px;
+            color: rgb(180, 151, 151);
+            font-size: 13px;
+            text-align: left;
+            line-height: 20px;
+        }
+
+        .item:nth-child(1) {
+            -webkit-flex: 3;
+            flex: 1;
+        }
+
+        .item:nth-child(2) {
+            -webkit-flex: 1;
+            flex: 2;
+        }
+
+        .item:nth-child(3) {
+            -webkit-flex: 1;
+            flex: 1;
+            text-align: right;
+        }
+
+        .item_b {
+            font-weight: bolder;
+            size: 15px;
+            line-height: 15px;
+        }
+
+        .top {
+            font-size: 20px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 30px;
+            height: 30px;
+            background: rgba(240, 164, 255, 0.5);
+            /* border-radius: 50%; */
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <div class="sign">
+        <span class="sign__word">Notice</span>
+
+    </div>
+    <div class="accordion vertical" style="width:70%; margin-bottom: 40px;">
+        <ul>
+            <li>
+                <input type="radio" id="radio-1" name="radio-accordion" checked="checked" />
+                <label for="radio-1">0810 배송지연 안내입니다.&nbsp;</label>
+                <div class="content">
+                    <h3>2019-08-10</h3>
+                    <pre>
+안녕하세요.
+어느덧 여름냄새가 물씬 나네요,
+저희 baking observatory에서 준비한 초급자 머핀 코스의 패키지 상품이 너무 잘팔려서
+예상 배송일보다 2~3일 정도 지연 될 예정이오니 고객님께 많은 양해 부탁드립니다.
+08월 06일 화요일 오후 3시 이후 주문건 -> 08월 14일 수요일 출고 예정
+
+정상적으로 다른 상품들은 배송 될 예정입니다.
+결제 취소는 1~2일 지연될 수 있으니, 양해부탁드립니다.
+최선을 다하는 baking observatory가 되겠습니다.
+
+                    </pre>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-2" name="radio-accordion" />
+                <label for="radio-2">하하&nbsp;하하</label>
+                <div class="content">
+                    <h3>Totally another one right here</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem.
+Pellentesque
+hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue
+neque
+nisi
+at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta
+diam.
+                    </pre>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-3" name="radio-accordion" />
+                <label for="radio-3">이제&nbsp;어흑</label>
+                <div class="content">
+                    <h3>I think I can go on forever</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem.
+Pellentesque
+hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue
+neque
+nisi
+at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta
+diam.
+                    </pre>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-4" name="radio-accordion" />
+                <label for="radio-4">그만&nbsp;하고싶당</label>
+                <div class="content">
+                    <h3>I was wrong, I'm done</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem.
+Pellentesque
+hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue
+neque
+nisi
+at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta
+diam.
+                    </pre>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-5" name="radio-accordion" />
+                <label for="radio-5">그만&nbsp;하고싶당</label>
+                <div class="content">
+                    <h3>I was wrong, I'm done</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem.
+Pellentesque
+hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue
+neque
+nisi
+at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta
+diam.
+                    </pre>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-6" name="radio-accordion" />
+                <label for="radio-6">그만&nbsp;하고싶당</label>
+                <div class="content">
+                    <h3>I was wrong, I'm done</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem.
+Pellentesque
+hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue
+neque
+nisi
+at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta
+diam.
+                    </pre>
+
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="radio-7" name="radio-accordion" />
+                <label for="radio-7">그만&nbsp;하고싶당</label>
+                <div class="content">
+                    <h3>I was wrong, I'm done</h3>
+                    <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec posuere lorem.
+Pellentesque
+hendrerit, lorem luctus porttitor vestibulum, eros sapien mattis libero, euismod congue
+neque
+nisi
+at ipsum. Mauris semper ipsum sit amet metus semper malesuada. Donec vel est justo, ac porta
+diam.
+                    </pre>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="item">
+                <img src='../../static/images/lionbaking.jpg' style="width: 100px; height:100px;" alt="사진">
+            </div>
+            <div class="item">
+                <p>
+                    (주)팀이름 | 대표이사들 : 강상혁 김은영 마서연 박효빈 한지원 |
+                    주소 : 광주광역시 동구 필문대로 309
+                    <br><br>
+                    사업자등록번호:123456789 | 통신판매신고 : 132광주4752 |
+                    <h7>copyright(c) 2019 all right reserved</h7>
+                </p>
+            </div>
+            <div class="item">
+                <div class='item_b'> BO SNS</div>
+                유튜브 | 블로그 | 인스타그램
+                <div class='item_b'>고객센터</div>
+                평일 : 9:00-18:30
+                <div class='item_b'>1:1상담</div>
+                누가할래?난 안해
+            </div>
+        </div>
+        <div><a href='#get-started' class="top">
+                <i class="fas fa-arrow-up"></i>
+            </a></div>
+    </footer>
+
+</body>
+
+</html>
